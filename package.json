@@ -11,12 +11,14 @@
     "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "if-env": "^1.0.4"
-  },
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "if-env": "^1.0.4",
+    "redux": "^4.1.0"
   }
 }
