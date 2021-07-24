@@ -45,39 +45,39 @@ db.once('open', async () => {
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
+      name: 'The Stay at Home Dad',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+        'For the guy that could use a break from the messy breakfasts and tea parties. This blend of black charcoal, coffee and vanilla might just be the fizz that your body is demanding. ',
       image: 'soap.jpg',
-      price: 3.99,
+      price: 10.99,
       quantity: 50
     },
     {
-      name: 'Set of Wooden Spoons',
+      name: 'The CEO',
       category: categories[1]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
+        'For the working man who need to relax after a long day of hard work.',
       image: 'wooden-spoons.jpg',
-      price: 14.99,
+      price: 10.99,
       quantity: 100
     },
     {
-      name: 'Camera',
+      name: ' The Fitness Guru Guy',
       category: categories[2]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
+        'For the man whose leg days could use some down time. This blend of tea tree oil, eucalyptus and epsom salt might just be the fizz that your body is screaming for. ',
       image: 'camera.jpg',
-      price: 399.99,
+      price: 10.99,
       quantity: 30
     },
     {
-      name: 'Tablet',
+      name: 'The Grouchy Guy',
       category: categories[2]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for.',
       image: 'tablet.jpg',
-      price: 199.99,
+      price: 10.99,
       quantity: 30
     },
     {
