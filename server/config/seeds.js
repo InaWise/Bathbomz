@@ -5,7 +5,7 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
+    { name: 'Bathbomz' },
     { name: 'Household Supplies' },
     { name: 'Electronics' },
     { name: 'Books' },
@@ -18,30 +18,30 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'The Executive Guy',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'For the man who is tired of crunching numbers and sitting in a corner cubicle. This blend of Dead Sea Salt and citrus is just the invigorating fizz you just might need. ',
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
-      price: 2.99,
+      price: 10.99,
       quantity: 500
     },
     {
-      name: 'Canned Coffee',
+      name: 'The Outdoors Guy',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        'For the man that works or plays outside and loves everything outdoors. This blend of Cedar wood and sage might just be the fizz that your senses are craving.',
       image: 'canned-coffee.jpg',
       category: categories[0]._id,
-      price: 1.99,
+      price: 10.99,
       quantity: 500
     },
     {
-      name: 'Toilet Paper',
+      name: 'The Sports Guy',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        ' For the man who follows his team, cheers for his team, and worships his team. This blend of Hemp and Lemongrass might be the fizz that you’re looking for after a great win (or loss).',
       image: 'toilet-paper.jpg',
-      price: 7.99,
+      price: 10.99,
       quantity: 20
     },
     {
@@ -103,7 +103,7 @@ db.once('open', async () => {
       description:
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'plastic-horses.jpg',
-      price: 2.99,
+      price: 5.99,
       quantity: 1000
     },
     {
