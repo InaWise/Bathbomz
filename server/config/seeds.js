@@ -5,9 +5,9 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
+    { name: 'Bath Bombs' },
+    { name: 'Oil Organics' },
+    { name: 'Soap' },
     { name: 'Books' },
     { name: 'Toys' }
   ]);
@@ -18,12 +18,12 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'Bath Bombs',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+        'Soap',
+      image: 'bath-bomb.jpg',
       category: categories[0]._id,
-      price: 2.99,
+      price: 10.99,
       quantity: 500
     },
     {

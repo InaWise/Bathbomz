@@ -42,7 +42,7 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       <h1>
-        <Link to="/">
+        <Link to="">
           <span role="img" aria-label="shopping bag">🧼</span>
           Bath-Bombs-For-Man
         </Link>
