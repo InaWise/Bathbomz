@@ -116,10 +116,10 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Alphabet Blocks',
+      name: 'Seagrass Tea',
       category: categories[4]._id,
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+        'Our Seagrass bath bombs are absolutely amazing, soothing yet calming. Made with soothing organic coconut oil that wraps your skin in silkiness, organic lemongrass which has healing and glowing properties for the skin, organic green tea which has antioxidant, anticancer, antibacterial, and antiviral properties for your skin, organic mint can help improve your skin's condition, and pure essential oils to infuse your senses to whisk you to a beach far away.',
       image: 'alphabet-blocks.jpg',
       price: 9.99,
       quantity: 600
