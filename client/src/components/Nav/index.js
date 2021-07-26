@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import { Segment, Menu, Me } from "semantic-ui-react"
+import {  Menu } from "semantic-ui-react"
 <ul className="flex-row">
   <li className="mx-1">
     <Link to="/orderHistory">
