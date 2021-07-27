@@ -79,7 +79,7 @@ db.once('open', async () => {
     },
     {
       name: 'Sentimental man',
-      category: categories[5]._id,
+      category: categories[6]._id,
       description:
         'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
       image: 'Rose.jpeg',
@@ -88,7 +88,7 @@ db.once('open', async () => {
     },
     {
       name: 'The Peace man',
-      category: categories[5]._id,
+      category: categories[7]._id,
       description:
         'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
       image: 'Bath.jpeg',
