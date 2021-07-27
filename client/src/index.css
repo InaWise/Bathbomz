@@ -1,7 +1,7 @@
 :root {
-  --primary: #0f29d4;
+  --primary: #000000;
   --secondary: #F3A847;
-  --tertiary: #B12704;
+  --tertiary: #000000;
   --light: #fafafa;
   --dark: #000000;
   --error: rgb(228, 46, 1);
@@ -42,35 +42,43 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  font-family: fangsong;
 }
 
 h2 {
   font-size: 2rem;
+  font-family: fangsong;
 }
 
 h3 {
   font-size: 1.75rem;
+  font-family: fangsong;
 }
 
 h4 {
   font-size: 1.5rem;
+  font-family: fangsong;
 }
 
 h5 {
   font-size: 1.25rem;
+  font-family: fangsong;
 }
 
 h6 {
   font-size: 1rem;
+  font-family: fangsong;
 }
 
 p {
   font-size: 1.1rem;
+  font-family: fangsong;
   margin-top: 0;
 }
 
 a {
   color: var(--tertiary);
+  font-family: fangsong;
   text-decoration: none;
   font-weight: bold;
 }
@@ -101,6 +109,7 @@ button {
 
 button:hover {
   opacity: .8;
+  
 }
 
 button[disabled] {
