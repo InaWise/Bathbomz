@@ -64,7 +64,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Made with skin soothing ingredients like a proprietary blend of Colloidal Oatmeal, hand crushed Sea Oats and old fashioned Oats for super skin softening. Real Lavender buds provide incredibly relaxing aromatic benefits. Sweet Almond Oil and vitamin-rich Seaweed extract soothe, soften, and prevent irritation by helping to maintain your skins natural balance',    
-          image: 'pepper.png',
+          image: 'cherry.png',
       price: 10.99,
       quantity: 20
     },
@@ -87,11 +87,11 @@ db.once('open', async () => {
       quantity: 50
     },
     {
-      name: 'Stay at Home Dads',
+      name: 'The girl dad',
       category: categories[3]._id,
       description:
         'For the guy that could use a break from the messy breakfasts and tea parties. This blend of black charcoal, coffee and vanilla might just be the fizz that your body is demanding', 
-          image: 'Vanilla.png',
+          image: 'pinkset.png',
       price: 10.99,
       quantity: 50
     },
@@ -105,20 +105,48 @@ db.once('open', async () => {
       quantity: 100
     },
     {
+      name: 'My guy',
+      category: categories[4]._id,
+      description:
+        'For the man whose leg days could use some down time. This blend of tea tree oil, eucalyptus and epsom salt might just be the fizz that your body is screaming for' ,     
+        image: 'sage.png',
+      price: 10.99,
+      quantity: 100 
+    },
+    {
       name: 'The Grouch',
       category: categories[5]._id,
       description:
         'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
       image: 'Lavender.png',
       price: 10.99,
-      quantity: 600
+      quantity: 600 
     },
+    {
+      name: 'The Powerful man',
+      category: categories[5]._id,
+      description:
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
+      image: 'Moonlight-.png',
+      price: 10.99,
+      quantity: 600 
+    },
+
     {
       name: 'Sentimental man',
       category: categories[6]._id,
       description:
         'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
-      image: 'Rose.jpeg',
+      image: 'grouppack.png',
+      price: 10.99,
+      quantity: 600
+    },
+    {
+      name: 'In my feelings',
+      category: categories[6]._id,
+      description:
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
+      image: 'roseyp.png',
       price: 10.99,
       quantity: 600
     },
