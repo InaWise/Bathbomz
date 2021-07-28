@@ -1,8 +1,14 @@
 {
-  "name": "mern-shopping",
+  "name": "blitzbomz",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "if-env": "^1.0.4",
+    "redux": "^4.1.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start && npm run seed",
@@ -11,12 +17,14 @@
     "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InaWise/blitzbomz.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "if-env": "^1.0.4"
+  "bugs": {
+    "url": "https://github.com/InaWise/blitzbomz/issues"
   },
-  "devDependencies": {
-    "concurrently": "^5.1.0"
-  }
+  "homepage": "https://github.com/InaWise/blitzbomz#readme"
 }

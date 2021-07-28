@@ -5,11 +5,17 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'The Executive' },
+    { name: 'Outdoors Adventure' },
+    { name: 'Sports Fanatics' },
+    { name: 'Stay At Home Dads' },
+    { name: 'Fitness Guru' },
+    { name: 'The Grouch' },
+    { name: 'Sentimental man' },
+    { name: 'The Peace man' },
+    
+  
+
   ]);
 
   console.log('categories seeded');
@@ -18,112 +24,143 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'The Executive',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+        'For the man who is tired of crunching numbers and sitting in a corner cubicle. This blend of Dead Sea Salt and citrus is just the invigorating fizz you just might need',
+      image: 'Gold.png',
       category: categories[0]._id,
-      price: 2.99,
+      price: 10.99,
       quantity: 500
     },
     {
-      name: 'Canned Coffee',
+      name: 'The boss man',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+        'Our Gentle Vanilla Honey Oatmeal Bath Bomb is an easy way to enjoy these bath benefits in one fizzy foamy drop. Gentle skin nurturing colloidal oatmeal and sweet almond oil quickly transform bath waters for silky soft skin. Rich Shea Butter moisturizes dry skin and handcrushed oats soote sensitive skin.',
+      image: 'oatmeal.png',
       category: categories[0]._id,
-      price: 1.99,
+      price: 10.99,
       quantity: 500
     },
     {
-      name: 'Toilet Paper',
+      name: 'Outdoors Adventure',
+      description:
+        'For the man that works or plays outside and loves everything outdoors. This blend of Cedar wood and sage might just be the fizz that your senses are cravingnpm',
+      image: 'Mint.png',
       category: categories[1]._id,
+      price: 10.99,
+      quantity: 500
+    },
+    {
+      name: 'The strongman',
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'toilet-paper.jpg',
-      price: 7.99,
+        'For the man that works or plays outside and loves everything outdoors. This blend of Cedar wood and sage might just be the fizz that your senses are cravingnpm',
+      image: 'pepper.png',
+      category: categories[1]._id,
+      price: 10.99,
+      quantity: 500
+    },
+    {
+      name: 'Sports Fanatics',
+      category: categories[2]._id,
+      description:
+        'Made with skin soothing ingredients like a proprietary blend of Colloidal Oatmeal, hand crushed Sea Oats and old fashioned Oats for super skin softening. Real Lavender buds provide incredibly relaxing aromatic benefits. Sweet Almond Oil and vitamin-rich Seaweed extract soothe, soften, and prevent irritation by helping to maintain your skins natural balance',    
+          image: 'cherry.png',
+      price: 10.99,
       quantity: 20
     },
     {
-      name: 'Handmade Soap',
-      category: categories[1]._id,
+      name: 'Big ole softy',
+      category: categories[2]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
+        'Our exclusive Himalayan Pink Sea Salt Bath Bombs are unlike any bath bomb youve every experienced These shimmering pink and pearlescent bombs are an explosion of skin softening ingredients like Sweet Almond Oil, Pink Himalayan Sea Salt that soothes and softens, and REAL Crushed Pearls. These highly valued, luminescent beads are ground into a fine powder and have been used topically for centuries. Cleopatra, queen of Egypt, was known to use pearls in her beauty regimen. And like any beauty ingredient worth its sea salt, pearl powder is considered to be a Supper Beauty Booster!, hand crushed Sea Oats and old fashioned Oats for super skin softening. Real Lavender buds provide incredibly relaxing aromatic benefits. Sweet Almond Oil and vitamin-rich Seaweed extract soothe soften and prevent irritation by helping to maintain your skins natural balance.',    
+          image: 'cranberry.png',
+      price: 10.99,
+      quantity: 20
+    },
+    {
+      name: 'Stay at Home Dads',
+      category: categories[3]._id,
+      description:
+        'For the guy that could use a break from the messy breakfasts and tea parties. This blend of black charcoal, coffee and vanilla might just be the fizz that your body is demanding', 
+          image: 'Vanilla.png',
+      price: 10.99,
       quantity: 50
     },
     {
-      name: 'Set of Wooden Spoons',
-      category: categories[1]._id,
-      description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'wooden-spoons.jpg',
-      price: 14.99,
-      quantity: 100
-    },
-    {
-      name: 'Camera',
-      category: categories[2]._id,
-      description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
-    },
-    {
-      name: 'Tablet',
-      category: categories[2]._id,
-      description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
-    },
-    {
-      name: 'Tales at Bedtime',
+      name: 'The girl dad',
       category: categories[3]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      price: 9.99,
+        'For the guy that could use a break from the messy breakfasts and tea parties. This blend of black charcoal, coffee and vanilla might just be the fizz that your body is demanding', 
+          image: 'pinkset.png',
+      price: 10.99,
+      quantity: 50
+    },
+    {
+      name: 'Fitness Guru',
+      category: categories[4]._id,
+      description:
+        'For the man whose leg days could use some down time. This blend of tea tree oil, eucalyptus and epsom salt might just be the fizz that your body is screaming for' ,     
+        image: 'Seaberry.png',
+      price: 10.99,
       quantity: 100
     },
     {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
+      name: 'My guy',
       category: categories[4]._id,
       description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
+        'For the man whose leg days could use some down time. This blend of tea tree oil, eucalyptus and epsom salt might just be the fizz that your body is screaming for' ,     
+        image: 'sage.png',
+      price: 10.99,
+      quantity: 100 
     },
     {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
+      name: 'The Grouch',
+      category: categories[5]._id,
       description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
+      image: 'Lavender.png',
+      price: 10.99,
+      quantity: 600 
     },
     {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
+      name: 'The Powerful man',
+      category: categories[5]._id,
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
+      image: 'Moonlight-.png',
+      price: 10.99,
+      quantity: 600 
+    },
+
+    {
+      name: 'Sentimental man',
+      category: categories[6]._id,
+      description:
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
+      image: 'grouppack.png',
+      price: 10.99,
+      quantity: 600
+    },
+    {
+      name: 'In my feelings',
+      category: categories[6]._id,
+      description:
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
+      image: 'roseyp.png',
+      price: 10.99,
+      quantity: 600
+    },
+    {
+      name: 'The Peace man',
+      category: categories[7]._id,
+      description:
+        'For the man that could use a chill session in his life, who’s just tired of everything. This blend of lavender and chamomile is just the fizz that your body is crying out for',
+      image: 'Bath.jpeg',
+      price: 10.99,
       quantity: 600
     }
+
+
   ]);
 
   console.log('products seeded');
