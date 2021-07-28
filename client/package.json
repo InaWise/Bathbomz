@@ -25,7 +25,7 @@
     "redux": "^4.1.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
-    "stripe": "^8.164.0"
+    "stripe": "^8.167.0"
   },
   "scripts": {
     "start": "react-scripts start",
