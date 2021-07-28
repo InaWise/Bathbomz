@@ -68,7 +68,7 @@ function Nav() {
       <Menu pointing inverted>
         <Link to="/"><Menu.Item
           name='Home'
-
+          
         /></Link>
         {showNavigation()}
 

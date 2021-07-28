@@ -1,7 +1,8 @@
 :root {
   --primary: #000000;
-  --secondary: #F3A847;
+  --secondary: #3333ff;
   --tertiary: #000000;
+  --forth:#f39c0b;
   --light: #fafafa;
   --dark: #000000;
   --error: rgb(228, 46, 1);
@@ -43,6 +44,8 @@ h6 {
 h1 {
   font-size: 2.25rem;
   font-family: fangsong;
+  color: var(--light)
+  
 }
 
 h2 {
@@ -77,7 +80,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--dark);
   font-family: fangsong;
   text-decoration: none;
   font-weight: bold;
