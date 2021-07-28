@@ -33,6 +33,15 @@ db.once('open', async () => {
       quantity: 500
     },
     {
+      name: 'The boss man',
+      description:
+        'Our Gentle Vanilla Honey Oatmeal Bath Bomb is an easy way to enjoy these bath benefits in one fizzy foamy drop. Gentle skin nurturing colloidal oatmeal and sweet almond oil quickly transform bath waters for silky soft skin. Rich Shea Butter moisturizes dry skin and handcrushed oats soote sensitive skin.',
+      image: 'oatmeal.png',
+      category: categories[0]._id,
+      price: 10.99,
+      quantity: 500
+    },
+    {
       name: 'Outdoors Adventure',
       description:
         'For the man that works or plays outside and loves everything outdoors. This blend of Cedar wood and sage might just be the fizz that your senses are cravingnpm',
@@ -42,13 +51,40 @@ db.once('open', async () => {
       quantity: 500
     },
     {
+      name: 'The strongman',
+      description:
+        'For the man that works or plays outside and loves everything outdoors. This blend of Cedar wood and sage might just be the fizz that your senses are cravingnpm',
+      image: 'pepper.png',
+      category: categories[1]._id,
+      price: 10.99,
+      quantity: 500
+    },
+    {
       name: 'Sports Fanatics',
       category: categories[2]._id,
       description:
-        'For the man who follows his team, cheers for his team, and worships his team. This blend of Hemp and Lemongrass might be the fizz that you’re looking for after a great win (or loss)',    
-          image: 'Sport2.jpg',
+        'Made with skin soothing ingredients like a proprietary blend of Colloidal Oatmeal, hand crushed Sea Oats and old fashioned Oats for super skin softening. Real Lavender buds provide incredibly relaxing aromatic benefits. Sweet Almond Oil and vitamin-rich Seaweed extract soothe, soften, and prevent irritation by helping to maintain your skins natural balance',    
+          image: 'pepper.png',
       price: 10.99,
       quantity: 20
+    },
+    {
+      name: 'Big ole softy',
+      category: categories[2]._id,
+      description:
+        'Our exclusive Himalayan Pink Sea Salt Bath Bombs are unlike any bath bomb youve every experienced These shimmering pink and pearlescent bombs are an explosion of skin softening ingredients like Sweet Almond Oil, Pink Himalayan Sea Salt that soothes and softens, and REAL Crushed Pearls. These highly valued, luminescent beads are ground into a fine powder and have been used topically for centuries. Cleopatra, queen of Egypt, was known to use pearls in her beauty regimen. And like any beauty ingredient worth its sea salt, pearl powder is considered to be a Supper Beauty Booster!, hand crushed Sea Oats and old fashioned Oats for super skin softening. Real Lavender buds provide incredibly relaxing aromatic benefits. Sweet Almond Oil and vitamin-rich Seaweed extract soothe soften and prevent irritation by helping to maintain your skins natural balance.',    
+          image: 'cranberry.png',
+      price: 10.99,
+      quantity: 20
+    },
+    {
+      name: 'Stay at Home Dads',
+      category: categories[3]._id,
+      description:
+        'For the guy that could use a break from the messy breakfasts and tea parties. This blend of black charcoal, coffee and vanilla might just be the fizz that your body is demanding', 
+          image: 'Vanilla.png',
+      price: 10.99,
+      quantity: 50
     },
     {
       name: 'Stay at Home Dads',
