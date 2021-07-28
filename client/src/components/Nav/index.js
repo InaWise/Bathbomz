@@ -1,7 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import {  Menu } from "semantic-ui-react"
+import {  Menu } from "semantic-ui-react";
 <ul className="flex-row">
   <li className="mx-1">
     <Link to="/orderHistory">
@@ -31,7 +31,6 @@ function Nav() {
           />
           </Link>
 
-
         </Menu.Menu>
       );
     } else {
@@ -51,27 +50,19 @@ function Nav() {
 
   return (
     <div>
-      {/* <header className="flex-row px-1">
-      <h1>
-        <Link to="">
-          <span role="img" aria-label="shopping bag">🧼</span>
-          Bath-Bombs-For-Man
-        </Link>
-      </h1>
-
-      <nav>
-        {showNavigation()}
-      </nav>
-  </header>*/}
-
-
+ 
       <Menu pointing inverted>
         <Link to="/"><Menu.Item
           name='Home'
           
         /></Link>
         {showNavigation()}
-
+      
+      <Link to="/AboutUs"><Menu.Item
+        name='About'
+        />
+      
+      </Link>
 
 
 
