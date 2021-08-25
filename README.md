@@ -33,7 +33,7 @@ This project is licended under:
 N/A
 
 ## Contributing:
-[InaWise](https://github.com/InaWise?tab=repositories), [isaac11195](https://github.com/isaac11195), [APereira07](https://github.com/APereira07) 
+[InaWise](https://github.com/InaWise?tab=repositories), [isaac11195](https://github.com/isaac11195), [APereira07](https://github.com/APereira07), [Candyalexy1997](https://github.com/Candyalexy1997)
 
 ## Test
 In order to test open the console and run the following:
