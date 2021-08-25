@@ -40,8 +40,7 @@ In order to test open the console and run the following:
 ```npm run seeds```
 
 ## Questions
-If you have questions contact me or any of the other contributors [Github](https://github.com/undefined) or contact
-undefined at iwise@mail.valenciacollege.edu
+If you have questions contact me or any of the other contributors at iwise@mail.valenciacollege.edu
 
 
 
