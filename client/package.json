@@ -2,7 +2,7 @@
   "name": "mern-client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:9000",
   "dependencies": {
     "@apollo/client": "^3.3.7",
     "@apollo/react-hooks": "^4.0.0",
@@ -23,6 +23,8 @@
     "react-scripts": "^4.0.3",
     "reduct": "^3.3.1",
     "redux": "^4.1.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
     "stripe": "^8.164.0"
   },
   "scripts": {
